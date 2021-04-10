@@ -1,0 +1,12 @@
+Number of STAs per data point: 6
+Number of data points: 10000
+STAs can be in one of 200 possible locations
+AP can be in one of the 31 locations
+error_generation.py was used to add error to the location data of STAs - to emulate real world localization technique errors.
+h1.py is the heuristic algorithm.
+
+
+loc_sta.npy - contains Location of each STA at each data point - 3D cartesian coordinates
+los_sta_sta.npy - contains the los between each STA - has 10000 matrices - each is 6*6
+los_ap_sta.npy - contains los between STA and AP in the particular STA location - to all 31 AP positions - 10000*31*6 matrix
+
